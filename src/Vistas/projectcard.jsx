@@ -4,12 +4,12 @@ import Draggable from 'react-draggable';
 function ProjectCard({ imgSrc, title, description, repoLink, demoLink }) {
   return (
     <Draggable>
-      <div className="relative my-10 p-6 max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto flex flex-col items-center justify-center text-center bg-white bg-opacity-10 backdrop-blur-lg backdrop-opacity-30">
+      <div className="relative my-10 p-6 max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto flex flex-col items-center justify-center text-center bg-gray-800 bg-opacity-70 backdrop-blur-lg backdrop-opacity-30"> {/* Cambiar a un fondo más oscuro */}
         {/* Glass effect on the card */}
         <img className="w-full mb-4 rounded-md" src={imgSrc} alt={title} />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 text-white">{title}</div>
-          <p className="text-gray-200 text-base">{description}</p>
+          <p className="text-gray-300 text-base">{description}</p> {/* Cambiar el color del texto a más claro */}
         </div>
         <div className="px-6 pt-4 pb-2">
           <a

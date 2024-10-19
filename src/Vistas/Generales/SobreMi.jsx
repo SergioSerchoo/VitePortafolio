@@ -9,7 +9,7 @@ function SobreMi() {
       {/* Foto y nombre */}
       <div className="flex items-center space-x-6">
         <img
-          src="src/assets/CV.jpeg"
+          src="https://almacenamientovite.s3.us-east-2.amazonaws.com/CV.jpeg"
           alt="Foto de Sergio"
           className="w-40 h-40 object-cover rounded-full shadow-lg"
         />
