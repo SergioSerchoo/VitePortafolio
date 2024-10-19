@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes fall {
+  from {
+    transform: translateY(0px); /* Comienza desde fuera de la pantalla */
+  }
+  to {
+    transform: translateY(500px); /* Caída completa hasta el fondo */
+  }
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(35, 255, 2, 0.8); /* Color verde */
+  pointer-events: none; /* Para evitar que interfiera con eventos del ratón */
+  animation: fall linear infinite; /* Aplicar animación de caída */
+  animation-duration: 5s; /* Duración de la animación, puedes ajustarlo */
+  z-index: 10; /* Para asegurarse de que no se oculte detrás de otros elementos */
+}
+body {
+  background-image: url('https://almacenamientovite.s3.us-east-2.amazonaws.com/7021919_Code_Software_3840x2160.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
